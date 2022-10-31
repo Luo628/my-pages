@@ -1,5 +1,4 @@
-
- import pandas as pd
+import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
@@ -13,7 +12,6 @@ genre_filter = st.sidebar.multiselect(
      'Genre Selector',
      df.genre.unique(),  # options
      df.genre.unique())  # defaults
-
 
 form = st.sidebar.form("certificate")
 certificate_filter = form.text_input('The certification (enter ALL to reset)', 'ALL')
