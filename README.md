@@ -1,4 +1,4 @@
-# my pages
+
  import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
@@ -8,13 +8,13 @@ df=df.sample(1000)
 
 plt.style.use('seaborn')
 st.title('Netflix popular movies dataset(We get 1000 data points from the Kaggle)')
-# create a multi select
+
 genre_filter = st.sidebar.multiselect(
      'Genre Selector',
      df.genre.unique(),  # options
      df.genre.unique())  # defaults
 
-# create a input form
+
 form = st.sidebar.form("certificate")
 certificate_filter = form.text_input('The certification (enter ALL to reset)', 'ALL')
 form.form_submit_button("Apply")
