@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-df = pd.read_csv('c:/ds/homework/movies.csv')
+df = pd.read_csv('movies.csv')
 
 #delete the 'min' and ','
 df=df.rename(columns={'duration':'duration_in_min','stars':"casts_of_movies"})
